@@ -2,7 +2,7 @@
 
 return [
 
-    'name' => 'Laravel Shop',
+    'name' => 'LaraShop',
 
     'logo' => '<b>Laravel</b> Shop',
 
@@ -18,7 +18,7 @@ return [
 
     'directory' => app_path('Admin'),
 
-    'title' => 'Laravel Shop 管理后台',
+    'title' => 'LaraShop',
 
     'secure' => env('ADMIN_HTTPS', false),
 

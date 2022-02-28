@@ -21,7 +21,7 @@ class PaymentController extends Controller
         return app('alipay')->web([
             'out_trade_no' => $order->no,
             'total_amount' => $order->total_amount,
-            'subject'      => 'To pay for Laravel Shop orders:' . $order->no,
+            'subject'      => 'To pay for LaraShop orders:' . $order->no,
         ]);
     }
 
@@ -71,7 +71,7 @@ class PaymentController extends Controller
         $wechatOrder = app('wechat_pay')->scan([
             'out_trade_no' => $order->no,
             'total_fee'    => $order->total_amount * 100,
-            'body'         => 'To pay for Laravel Shop orders:' . $order->no,
+            'body'         => 'To pay for LaraShop orders:' . $order->no,
         ]);
         $qrCode = new QrCode($wechatOrder->code_url);
 
