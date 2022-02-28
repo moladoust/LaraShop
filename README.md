@@ -3,7 +3,7 @@
 
 first of all clone it from git!
 ```
-git clone ...
+git clone https://github.com/moladoust/LaraShop.git
 ```
 so install dependencies:
 ```
